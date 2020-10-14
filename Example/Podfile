@@ -1,0 +1,6 @@
+use_frameworks!
+target 'NPATAuthSDK_Tests' do
+  pod 'NPATAuthSDK', :path => '../'
+  
+  
+end
