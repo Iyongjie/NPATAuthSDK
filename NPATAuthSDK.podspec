@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author           = { 'iyongjie' => 'iyongjie@yeah.net' }
   s.source           = { :git => 'https://github.com/iyongjie/NPATAuthSDK.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.vendored_frameworks = 'NPATAuthSDK/ATAuthSDK.framework'
 end
