@@ -13,12 +13,9 @@
 
 #pragma mark - 该返回码为阿里云号码认证SDK⾃身的返回码，请注意600011及600012错误内均含有运营商返回码，具体错误在碰到之后查阅 https://help.aliyun.com/document_detail/85351.html?spm=a2c4g.11186623.6.561.32a7360cxvWk6H
 
+
 /// 接口成功
 static NSString * const PNSCodeSuccess = @"600000";
-/// 唤起授权页成功
-static NSString * const PNSCodeLoginControllerPresentSuccess = @"600001";
-/// 唤起授权页失败
-static NSString * const PNSCodeLoginControllerPresentFailed = @"600002";
 /// 获取运营商配置信息失败
 static NSString * const PNSCodeGetOperatorInfoFailed = @"600004";
 /// 未检测到sim卡
@@ -45,11 +42,15 @@ static NSString * const PNSCodeDecodeAppInfoFailed = @"600017";
 static NSString * const PNSCodeCarrierChanged = @"600021";
 /// 终端环境检测失败（终端不支持认证 / 终端检测参数错误）
 static NSString * const PNSCodeEnvCheckFail = @"600025";
+
+/*************** 号码认证授权页相关返回码 START ***************/
+
+/// 唤起授权页成功
+static NSString * const PNSCodeLoginControllerPresentSuccess = @"600001";
+/// 唤起授权页失败
+static NSString * const PNSCodeLoginControllerPresentFailed = @"600002";
 /// 授权页已加载时不允许调用加速或预取号接口
 static NSString * const PNSCodeCallPreLoginInAuthPage = @"600026";
-
-#pragma mark - 授权页的点击事件回调码
-
 /// 点击返回，⽤户取消一键登录
 static NSString * const PNSCodeLoginControllerClickCancel = @"700000";
 /// 点击切换按钮，⽤户取消免密登录
@@ -60,5 +61,8 @@ static NSString * const PNSCodeLoginControllerClickLoginBtn = @"700002";
 static NSString * const PNSCodeLoginControllerClickCheckBoxBtn = @"700003";
 /// 点击协议富文本文字
 static NSString * const PNSCodeLoginControllerClickProtocol = @"700004";
+
+/*************** 号码认证授权页相关返回码 FINISH ***************/
+
 
 #endif /* PNSReturnCode_h */
