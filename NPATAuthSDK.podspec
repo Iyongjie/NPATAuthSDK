@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NPATAuthSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'NPATAuthSDK'
  
 
@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  s.resources        = "NPATAuthSDK/ATAuthSDK.framework/ATAuthSDK.bundle"
   s.vendored_frameworks = 'NPATAuthSDK/ATAuthSDK.framework', 'NPATAuthSDK/YTXMonitor.framework', 'NPATAuthSDK/YTXOperators.framework'
 end
